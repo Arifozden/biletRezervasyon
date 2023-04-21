@@ -42,14 +42,14 @@ function rezerve(){
 
         $.post("/kaydet",biletler,function (){
             hepsiniGetir();
-        })
+        });
         silici();
     }
 }
 
 function hepsiniGetir(){
     $.get("/goster",function (data){
-        duzenle(data);
+        duzenle(data)
     });
 }
 
